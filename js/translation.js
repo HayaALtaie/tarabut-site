@@ -1,5 +1,13 @@
 const translations = {
     ar: {
+        // Page Titles
+        page_title_home: 'ترابط - الرئيسية',
+        page_title_about: 'ترابط - من نحن',
+        page_title_services: 'ترابط - الخدمات',
+        page_title_clients: 'ترابط - عملائنا',
+        page_title_contact: 'ترابط - تواصل معنا',
+        page_title_news: 'ترابط - الأخبار',
+
         lang_btn: '🇺🇸 English',
         nav_home: 'الرئيسية',
         nav_about: 'من نحن',
@@ -141,6 +149,14 @@ const translations = {
         feature_9_desc: 'نولي اهتماماً دائماً بقياس مدى رضا العملاء عن الخدمة المقدمة، ونسعى جاهدين لتحسين الجودة وتقديم أفضل الخدمات.'
     },
     en: {
+        // Page Titles
+        page_title_home: 'Tarabut - Home',
+        page_title_about: 'Tarabut - About Us',
+        page_title_services: 'Tarabut - Services',
+        page_title_clients: 'Tarabut - Our Clients',
+        page_title_contact: 'Tarabut - Contact Us',
+        page_title_news: 'Tarabut - News',
+
         lang_btn: '🇮🇶 العربية',
         nav_home: 'Home',
         nav_about: 'About Us',

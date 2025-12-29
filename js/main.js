@@ -13,13 +13,22 @@ document.addEventListener('DOMContentLoaded', () => {
         if (typeof translations !== 'undefined') {
             const t = translations[lang];
 
+            // Update page title
+            const titleElement = document.querySelector('title[data-i18n]');
+            if (titleElement) {
+                const titleKey = titleElement.getAttribute('data-i18n');
+                if (t[titleKey]) {
+                    titleElement.textContent = t[titleKey];
+                }
+            }
+
             const elements = document.querySelectorAll('[data-i18n]');
             elements.forEach(element => {
                 const key = element.getAttribute('data-i18n');
                 if (t[key]) {
                     if (element.tagName === 'H1' || element.tagName === 'P' || element.tagName === 'DIV' || element.tagName === 'SPAN') {
                         element.innerHTML = t[key];
-                    } else {
+                    } else if (element.tagName !== 'TITLE') {
                         element.textContent = t[key];
                     }
                 }

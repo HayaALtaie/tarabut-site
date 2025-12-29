@@ -51,6 +51,42 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('selectedLang') || 'ar';
     setLanguage(savedLang);
 
+    const videoPlayBtn = document.getElementById('videoPlayBtn');
+    const videoModal = document.getElementById('videoModal');
+    const videoModalClose = document.getElementById('videoModalClose');
+    const videoIframe = document.getElementById('videoIframe');
+    const videoUrl = 'https://www.youtube.com/embed/fUAxDpxcSiU?autoplay=1&controls=1&rel=0&modestbranding=1';
+
+    function closeVideoModal() {
+        videoModal.classList.remove('active');
+        videoIframe.src = '';
+        document.body.classList.remove('modal-open');
+        document.documentElement.classList.remove('modal-open');
+    }
+
+    if (videoPlayBtn && videoModal && videoModalClose && videoIframe) {
+        videoPlayBtn.addEventListener('click', () => {
+            videoModal.classList.add('active');
+            videoIframe.src = videoUrl;
+            document.body.classList.add('modal-open');
+            document.documentElement.classList.add('modal-open');
+        });
+
+        videoModalClose.addEventListener('click', closeVideoModal);
+
+        videoModal.addEventListener('click', (e) => {
+            if (e.target === videoModal) {
+                closeVideoModal();
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && videoModal.classList.contains('active')) {
+                closeVideoModal();
+            }
+        });
+    }
+
     const backToTopBtn = document.getElementById('backToTop');
 
     if (backToTopBtn) {

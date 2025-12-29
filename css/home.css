@@ -410,6 +410,25 @@ html.modal-open {
   color: var(--white);
 }
 
+.service-card-primary {
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
+
+.service-card-primary .service-icon {
+  background-color: var(--white-20);
+  color: var(--white);
+}
+
+.service-card-primary h3,
+.service-card-primary p {
+  color: var(--white);
+}
+
+.service-card-primary:hover {
+  background-color: var(--primary-blue-dark);
+}
+
 .bg-dots-left {
   position: absolute;
   top: 40%;

@@ -41,6 +41,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     element.setAttribute('placeholder', t[key]);
                 }
             });
+
+            const icons = document.querySelectorAll('[data-i18n-icon]');
+            icons.forEach(element => {
+                const key = element.getAttribute('data-i18n-icon');
+                if (t[key]) {
+                    element.className = 'fas ' + t[key];
+                }
+            });
         }
 
         if (typeof goToSlide === 'function' && typeof currentIndex !== 'undefined' && typeof slideCount !== 'undefined') {

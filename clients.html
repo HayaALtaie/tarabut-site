@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css/components/header.css">
+  <link rel="stylesheet" href="css/components/hero.css">
+  <link rel="stylesheet" href="css/components/about-section.css">
+  <link rel="stylesheet" href="css/clients.css">
+  <link rel="stylesheet" href="css/components/footer.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+    <title>Tarabut - Clients</title>
+</head>
+
+<body>
+
+    <button id="lang-toggle" class="lang-btn" data-i18n="lang_btn">🇺🇸 English</button>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo-area">
+                <div class="logo-shape">
+                    <img src="assets/images/logo-tarabut.png" alt="Tarabut Logo" />
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+                    <li><a href="about.html" data-i18n="nav_about">من نحن</a></li>
+                    <li><a href="services.html" data-i18n="nav_services">الخدمات</a></li>
+                    <li><a href="news.html" data-i18n="nav_news">الاخبار</a></li>
+                    <li><a href="clients.html" class="active" data-i18n="nav_clients">عملائنا</a></li>
+
+                    <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+
+            <div class="top-bar">
+                <div class="contact-info">
+                    <span data-i18n="contact_number">07834434800</span>
+                    <div class="phone-icon-circle">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero page-hero clients-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <div class="page-title-box">
+                <h1 class="page-title" data-i18n="nav_clients">عملاؤنا</h1>
+                <div class="breadcrumbs">
+                    <a href="index.html" data-i18n="nav_home">الرئيسية</a>
+                    <i class="fas fa-arrow-left"></i>
+                    <span data-i18n="nav_clients">عملاؤنا</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-clients-grid-section">
+        <div class="container">
+            <div class="clients-header" style="text-align: center; margin-bottom: 50px;">
+                <h2 class="section-title" data-i18n="nav_clients" style="font-size: var(--font-5xl);">عملائنا</h2>
+            </div>
+
+            <div class="clients-grid-container">
+                <!-- Row 1 -->
+                <div class="client-grid-card">
+                    <img src="assets/images/logo/logo-Earthlink.png" alt="Earthlink">
+                </div>
+                <div class="client-grid-card">
+                    <img src="assets/images/logo/logo-global.png" alt="GlobalTek">
+                </div>
+                <div class="client-grid-card">
+                    <img src="assets/images/logo/logo-sana.png" alt="Sana">
+                </div>
+                <div class="client-grid-card">
+                    <img src="assets/images/logo/logo-watani.png" alt="Watani">
+                </div>
+
+                <!-- Row 2 -->
+                <div class="client-grid-card">
+                    <img src="assets/images/logo/window-world.svg" alt="Window World">
+                </div>
+                <div class="client-grid-card">
+                    <img src="assets/images/logo/Tech.svg" alt="Tech">
+                </div>
+                <div class="client-grid-card">
+                    <img src="assets/images/logo/Tash.svg" alt="Tashgheel">
+                </div>
+                <div class="client-grid-card">
+                    <img src="assets/images/logo/Tamata.svg" alt="Tamata">
+                </div>
+
+                <!-- Row 3 -->
+                <div class="client-grid-card">
+                    <img src="assets/images/logo/Nu.svg" alt="Nukhba">
+                </div>
+                <div class="client-grid-card">
+                    <img src="assets/images/logo/ta3lem.svg" alt="Ta3lem">
+                </div>
+                <div class="client-grid-card">
+                    <img src="assets/images/logo/taza.svg" alt="Taza">
+                </div>
+                <div class="client-grid-card">
+                    <!-- Placeholder for Ahlan if missing, or skipping it for now? 
+                         Let's put a hidden div or something. Actually I'll just put the 12th one if I have it. -->
+                    <div style="font-family: Cairo, sans-serif; font-weight: bold; color: #4b8a36; font-size: 24px;">
+                        AHLAN</div>
+                </div>
+
+                <!-- Row 4 -->
+                <div class="client-grid-card">
+                    <img src="assets/images/logo/earthlink-aca.png" alt="Earthlink Academy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-cards-container">
+            <div class="footer-card">
+                <i class="fas fa-phone-alt large-icon"></i>
+                <div class="card-info">
+                    <h4 data-i18n="footer_call">اتصل بنا</h4>
+                    <p data-i18n="contact_number">07834434800</p>
+                </div>
+                <div class="small-icon-circle">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+            </div>
+            <div class="footer-card">
+                <i class="fas fa-map-marker-alt large-icon"></i>
+                <div class="card-info">
+                    <h4 data-i18n="footer_address">العنوان</h4>
+                    <p data-i18n="footer_address_info">بغداد - الكرادة - شارع العرصات</p>
+                </div>
+                <div class="small-icon-circle">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo-tarabut.png" alt="Tarabut Logo">
+                    <div class="logo-text">
+                        <span>ترابط</span>
+                        <span>Tarabut</span>
+                    </div>
+                </div>
+
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">من نحن</a></li>
+                        <li><a href="clients.html" data-i18n="nav_clients">عملاؤنا</a></li>
+                        <li><a href="index.html#contact" data-i18n="nav_contact">تواصل معنا</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-copyright">
+                <p data-i18n="footer_copy">Copyright 2025 Tarabut. All Rights Reserved</p>
+            </div>
+        </div>
+
+        <button id="backToTop" class="back-to-top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </footer>
+
+    <script src="js/translation.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

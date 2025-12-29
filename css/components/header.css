@@ -1,0 +1,100 @@
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: transparent;
+}
+
+.header-inner {
+  display: flex;
+  height: var(--header-height);
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+}
+
+.logo-area {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  height: 100%;
+  padding: 0 var(--spacing-3xl);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 60px 100%);
+}
+
+.logo-shape {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-shape img {
+  max-width: 180px;
+  height: auto;
+}
+
+.top-bar {
+  height: 100%;
+  background-color: var(--primary-blue);
+  display: flex;
+  align-items: center;
+  padding: 0 var(--spacing-xl);
+  margin-left: 0;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  gap: var(--spacing-sm);
+  font-weight: var(--font-bold);
+}
+
+.phone-icon-circle {
+  background: var(--white);
+  color: var(--dark-blue);
+  width: 25px;
+  height: 25px;
+  border-radius: var(--radius-full);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-base);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background: var(--overlay-medium);
+  padding: 0 var(--spacing-xl);
+  margin-right: -60px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: var(--font-lg);
+  font-weight: var(--font-semibold);
+  transition: color var(--transition-fast);
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+  color: var(--sky-blue);
+}

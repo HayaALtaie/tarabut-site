@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/components/header.css" />
+    <link rel="stylesheet" href="css/components/hero.css" />
+    <link rel="stylesheet" href="css/components/about-section.css" />
+    <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/components/footer.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <title>Tarabut - Services</title>
+</head>
+
+<body>
+
+    <button id="lang-toggle" class="lang-btn" data-i18n="lang_btn">🇺🇸 English</button>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo-area">
+                <div class="logo-shape">
+                    <img src="assets/images/logo-tarabut.png" alt="Tarabut Logo" />
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+                    <li><a href="about-us.html" data-i18n="nav_about">من نحن</a></li>
+                    <li><a href="services.html" class="active" data-i18n="nav_services">الخدمات</a></li>
+                    <li><a href="news.html" data-i18n="nav_news">الاخبار</a></li>
+                    <li><a href="clients.html" data-i18n="nav_clients">عملائنا</a></li>
+
+                    <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+
+            <div class="top-bar">
+                <div class="contact-info">
+                    <span data-i18n="contact_number">07834434800</span>
+                    <div class="phone-icon-circle">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero page-hero services-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <div class="page-title-box">
+                <h1 class="page-title" data-i18n="nav_services">الخدمات</h1>
+                <div class="breadcrumbs">
+                    <a href="index.html" data-i18n="nav_home">الرئيسية</a>
+                    <i class="fas fa-arrow-left"></i>
+                    <span data-i18n="nav_services">الخدمات</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-services-section">
+        <div class="container">
+            <div class="services-page-grid">
+                <!-- Service 1: Security -->
+                <div class="service-page-item">
+                    <div class="service-img-wrapper">
+                        <img src="assets/images/services/service1.jpeg" alt="Security Services">
+                    </div>
+                    <div class="service-page-content">
+                        <h3 data-i18n="page_service_1_title">خدمات الحراسة</h3>
+                        <p data-i18n="page_service_1_desc">نوفر خدمة الحراسة للشركات والمنشآت في العراق، عبر امتلاكنا
+                            حراساً أمنيين مدربين ومؤهلين مهنياً لحماية الأشخاص والممتلكات.</p>
+                    </div>
+                </div>
+
+                <!-- Service 2: Cameras -->
+                <div class="service-page-item">
+                    <div class="service-img-wrapper">
+                        <img src="assets/images/services/service2.jpeg" alt="Camera Monitoring">
+                    </div>
+                    <div class="service-page-content">
+                        <h3 data-i18n="page_service_2_title">مراقبة الكاميرات</h3>
+                        <p data-i18n="page_service_2_desc">وتشمل عملية تخطيط وتركيب وإدارة غرف عمليات مراقبة الكاميرات
+                            لتوفير الحماية للممتلكات والأفراد باستخدام أنظمة الكاميرات.</p>
+                    </div>
+                </div>
+
+                <!-- Service 3: Maintenance -->
+                <div class="service-page-item">
+                    <div class="service-img-wrapper">
+                        <img src="assets/images/services/service3.jpeg" alt="Maintenance">
+                    </div>
+                    <div class="service-page-content">
+                        <h3 data-i18n="page_service_3_title">الصيانة</h3>
+                        <p data-i18n="page_service_3_desc">نحافظ على الأبنية عن طريق الفحوصات والصيانة الدورية للتأكد من
+                            أن جميع أجزاء المبنى تعمل بشكل صحيح وأن المبنى يبقى آمناً لشاغليه.</p>
+                    </div>
+                </div>
+
+                <!-- Service 4: Hotel/Flight Booking -->
+                <div class="service-page-item">
+                    <div class="service-img-wrapper">
+                        <img src="assets/images/services/service4.jpeg" alt="Hotel & Flight Booking">
+                    </div>
+                    <div class="service-page-content">
+                        <h3 data-i18n="page_service_4_title">حجز الفنادق والطيران</h3>
+                        <p data-i18n="page_service_4_desc">نوفر لأصحاب الحجوزات الفندقية نظام سلس للحجز داخل العراق، كما
+                            نوفر نظام حجوزات للرحلات الجوية من وإلى العراق.</p>
+                    </div>
+                </div>
+
+                <!-- Service 5: Vehicle Booking -->
+                <div class="service-page-item">
+                    <div class="service-img-wrapper">
+                        <img src="assets/images/services/service5.jpeg" alt="Vehicle Booking">
+                    </div>
+                    <div class="service-page-content">
+                        <h3 data-i18n="page_service_5_title">حجز المركبات</h3>
+                        <p data-i18n="page_service_5_desc">نقدم خدمة تأجير السيارات لجميع المحافظات العراقية بنظام 24/7،
+                            عبر توفير سيارات حديثة وسائقين على طراز رفيع من المسؤولية.</p>
+                    </div>
+                </div>
+
+                <!-- Service 6: Rehabilitation -->
+                <div class="service-page-item">
+                    <div class="service-img-wrapper">
+                        <img src="assets/images/services/service6.jpeg" alt="Facility Rehabilitation">
+                    </div>
+                    <div class="service-page-content">
+                        <h3 data-i18n="page_service_6_title">تأهيل المباني</h3>
+                        <p data-i18n="page_service_6_desc">تأهيل وتجديد المباني وفق خطط معمارية هندسية، وتشمل الأعمال
+                            تأهيل الغرف ومنظومات الكهرباء والمرافق الصحية والمخازن والكراج.</p>
+                    </div>
+                </div>
+
+                <!-- Service 7: Cleaning -->
+                <div class="service-page-item centered-item">
+                    <div class="service-img-wrapper">
+                        <img src="assets/images/services/service7.jpeg" alt="Hospitality & Cleaning">
+                    </div>
+                    <div class="service-page-content">
+                        <h3 data-i18n="page_service_7_title">الضيافة والتنظيف</h3>
+                        <p data-i18n="page_service_7_desc">تمتلك ترابط سنوات خبرة جيدة في إدارة عمليات التنظيف والضيافة
+                            لا سيما وأنها تدير عمليات تنظيف وضيافة أكثر من 6 شركات عراقية كبيرة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-cards-container">
+            <div class="footer-card">
+                <i class="fas fa-phone-alt large-icon"></i>
+                <div class="card-info">
+                    <h4 data-i18n="footer_call">اتصل بنا</h4>
+                    <p data-i18n="contact_number">07834434800</p>
+                </div>
+                <div class="small-icon-circle">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+            </div>
+            <div class="footer-card">
+                <i class="fas fa-map-marker-alt large-icon"></i>
+                <div class="card-info">
+                    <h4 data-i18n="footer_address">العنوان</h4>
+                    <p data-i18n="footer_address_info">بغداد - الكرادة - شارع العرصات</p>
+                </div>
+                <div class="small-icon-circle">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo-tarabut.png" alt="Tarabut Logo">
+                    <div class="logo-text">
+                        <span>ترابط</span>
+                        <span>Tarabut</span>
+                    </div>
+                </div>
+
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">من نحن</a></li>
+                        <li><a href="index.html#clients" data-i18n="nav_clients">عملاؤنا</a></li>
+                        <li><a href="index.html#contact" data-i18n="nav_contact">تواصل معنا</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-copyright">
+                <p data-i18n="footer_copy">Copyright 2025 Tarabut. All Rights Reserved</p>
+            </div>
+        </div>
+
+        <button id="backToTop" class="back-to-top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </footer>
+
+    <script src="js/translation.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

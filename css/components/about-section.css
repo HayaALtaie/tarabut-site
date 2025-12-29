@@ -1,0 +1,133 @@
+
+.about-us {
+  padding: var(--spacing-4xl) 0;
+  background-color: var(--light-gray);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-3xl);
+  flex-direction: row-reverse;
+  max-width: var(--container-lg);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-description {
+  color: var(--text-gray);
+  font-size: var(--font-lg);
+  line-height: 1.8;
+  margin-bottom: var(--spacing-md);
+  font-weight: var(--font-normal);
+}
+
+.values-title {
+  font-size: var(--font-xl);
+  color: var(--text-gray);
+  margin-bottom: var(--spacing-sm);
+  font-weight: var(--font-semibold);
+}
+
+.values-list {
+  list-style: none;
+  margin-bottom: var(--spacing-lg);
+  padding: 0;
+}
+
+.values-list li {
+  color: var(--primary-blue);
+  font-size: var(--font-lg);
+  font-weight: var(--font-bold);
+  margin-bottom: 8px;
+}
+
+.about-contact {
+  display: block;
+  margin-top: var(--spacing-md);
+}
+
+.contact-label {
+  display: block;
+  font-size: var(--font-base);
+  color: var(--text-gray);
+  margin-bottom: var(--spacing-xs);
+}
+
+.contact-number {
+  font-size: var(--font-md);
+  font-weight: var(--font-semibold);
+  color: var(--stats-blue);
+  text-decoration: none;
+  display: inline-block;
+  direction: ltr;
+}
+
+.about-image {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.image-wrapper {
+  position: relative;
+  z-index: 10;
+}
+
+.image-wrapper img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  min-height: 500px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.experience-badge {
+  position: absolute;
+  bottom: -40px;
+  left: -40px;
+  width: 180px;
+  height: 180px;
+  background-color: var(--primary-blue);
+  border-radius: var(--radius-full);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: var(--spacing-sm) solid var(--light-gray);
+  z-index: 20;
+}
+
+.exp-year {
+  font-size: var(--font-6xl);
+  font-weight: var(--font-black);
+  line-height: 1;
+}
+
+.exp-text {
+  font-size: var(--font-xl);
+  font-weight: var(--font-bold);
+  line-height: 1.2;
+}
+
+.blue-circle-top {
+  position: absolute;
+  top: var(--spacing-3xl);
+  right: -50px;
+  width: 120px;
+  height: 120px;
+  background-color: var(--stats-blue);
+  border-radius: var(--radius-full);
+  z-index: -1;
+}

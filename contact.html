@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/components/header.css" />
+    <link rel="stylesheet" href="css/components/hero.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/components/footer.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <title>Tarabut - Contact Us</title>
+</head>
+
+<body>
+
+    <button id="lang-toggle" class="lang-btn" data-i18n="lang_btn">🇺🇸 English</button>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo-area">
+                <div class="logo-shape">
+                    <img src="assets/images/logo-tarabut.png" alt="Tarabut Logo" />
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+                    <li><a href="about-us.html" data-i18n="nav_about">من نحن</a></li>
+                    <li><a href="services.html" data-i18n="nav_services">الخدمات</a></li>
+                    <li><a href="news.html" data-i18n="nav_news">الاخبار</a></li>
+                    <li><a href="clients.html" data-i18n="nav_clients">عملائنا</a></li>
+                    <li><a href="contact.html" class="active" data-i18n="nav_contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+
+            <div class="top-bar">
+                <div class="contact-info">
+                    <span data-i18n="contact_number">07834434800</span>
+                    <div class="phone-icon-circle">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero page-hero contact-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <div class="page-title-box">
+                <h1 class="page-title" data-i18n="nav_contact">تواصل معنا</h1>
+                <div class="breadcrumbs">
+                    <a href="index.html" data-i18n="nav_home">الرئيسية</a>
+                    <i class="fas fa-arrow-left"></i>
+                    <span data-i18n="nav_contact">تواصل معنا</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-cards-section">
+        <div class="container">
+            <div class="contact-cards-grid">
+                <!-- Email Card -->
+                <div class="contact-info-card">
+                    <div class="card-icon-box">
+                        <i class="fas fa-at"></i>
+                    </div>
+                    <h3 data-i18n="contact_card_email_title">تواصل معنا</h3>
+                    <p>info@tarabut.iq</p>
+                </div>
+
+                <!-- Phone Card -->
+                <div class="contact-info-card">
+                    <div class="card-icon-box">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3 data-i18n="contact_card_phone_title">اتصل بنا</h3>
+                    <p>07834434800</p>
+                </div>
+
+                <!-- Address Card -->
+                <div class="contact-info-card">
+                    <div class="card-icon-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 data-i18n="contact_card_address_title">قم بزيارتنا</h3>
+                    <p data-i18n="contact_card_address_desc">بغداد، الكرادة، شارع العرصات</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-full-section">
+        <div class="container">
+            <div class="contact-full-content">
+                <div class="section-tag-centered">
+                    <span class="dot"></span>
+                    <span data-i18n="nav_contact">تواصل معنا</span>
+                </div>
+                <h2 class="contact-full-title" data-i18n="contact_subtitle">قدم طلبك عبر الاستمارة للحصول على خدماتنا
+                </h2>
+
+                <form class="contact-full-form">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <i class="fas fa-user icon"></i>
+                            <input type="text" data-i18n-placeholder="field_name" placeholder="الاسم">
+                        </div>
+                        <div class="input-group">
+                            <i class="fas fa-building icon"></i>
+                            <input type="text" data-i18n-placeholder="field_company" placeholder="اسم الشركة">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <i class="fas fa-envelope icon"></i>
+                            <input type="email" data-i18n-placeholder="field_email" placeholder="الايميل">
+                        </div>
+                        <div class="input-group">
+                            <i class="fas fa-phone icon"></i>
+                            <input type="tel" data-i18n-placeholder="field_phone" placeholder="الهاتف">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <i class="fas fa-concierge-bell icon"></i>
+                            <input type="text" data-i18n-placeholder="field_service" placeholder="نوع الخدمة">
+                        </div>
+                        <div class="input-group">
+                            <i class="fas fa-map-marker-alt icon"></i>
+                            <input type="text" data-i18n-placeholder="field_governorate" placeholder="المحافظة">
+                        </div>
+                    </div>
+                    <div class="input-group full-width">
+                        <i class="fas fa-comment-dots icon"></i>
+                        <textarea data-i18n-placeholder="field_message" placeholder="اكتب رسالة"></textarea>
+                    </div>
+                    <div class="btn-container">
+                        <button type="submit" class="contact-full-btn" data-i18n="btn_send">ارسال</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-cards-container">
+            <div class="footer-card">
+                <i class="fas fa-phone-alt large-icon"></i>
+                <div class="card-info">
+                    <h4 data-i18n="footer_call">اتصل بنا</h4>
+                    <p data-i18n="contact_number">07834434800</p>
+                </div>
+                <div class="small-icon-circle">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+            </div>
+            <div class="footer-card">
+                <i class="fas fa-map-marker-alt large-icon"></i>
+                <div class="card-info">
+                    <h4 data-i18n="footer_address">العنوان</h4>
+                    <p data-i18n="footer_address_info">بغداد - الكرادة - شارع العرصات</p>
+                </div>
+                <div class="small-icon-circle">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo-tarabut.png" alt="Tarabut Logo">
+                    <div class="logo-text">
+                        <span>ترابط</span>
+                        <span>Tarabut</span>
+                    </div>
+                </div>
+
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+                        <li><a href="about-us.html" data-i18n="nav_about">من نحن</a></li>
+                        <li><a href="clients.html" data-i18n="nav_clients">عملائنا</a></li>
+                        <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-copyright">
+                <p data-i18n="footer_copy">Copyright 2025 Tarabut. All Rights Reserved</p>
+            </div>
+        </div>
+
+        <button id="backToTop" class="back-to-top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </footer>
+
+    <script src="js/translation.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

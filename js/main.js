@@ -341,7 +341,26 @@ document.addEventListener('DOMContentLoaded', () => {
             goToWorkSlide(workIndex);
         };
 
+        function updateWorkArrows() {
+            if (!workPrevBtn || !workNextBtn) return;
+
+            const isRTL = document.documentElement.getAttribute('dir') === 'rtl';
+            const prevIcon = workPrevBtn.querySelector('i');
+            const nextIcon = workNextBtn.querySelector('i');
+
+            if (isRTL) {
+                prevIcon.className = 'fas fa-chevron-right';
+                nextIcon.className = 'fas fa-chevron-left';
+            } else {
+                prevIcon.className = 'fas fa-chevron-left';
+                nextIcon.className = 'fas fa-chevron-right';
+            }
+        }
+
+        window.updateWorkArrows = updateWorkArrows;
+
         createWorkDots();
+        updateWorkArrows();
         window.addEventListener('resize', updateWorkPosition);
     }
 
@@ -350,5 +369,6 @@ document.addEventListener('DOMContentLoaded', () => {
         originalSetLanguage(lang);
         if (typeof updateSliderPosition === 'function') updateSliderPosition();
         if (typeof updateWorkPosition === 'function') updateWorkPosition();
+        if (typeof updateWorkArrows === 'function') updateWorkArrows();
     };
 });

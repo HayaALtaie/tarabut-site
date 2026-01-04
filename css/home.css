@@ -966,11 +966,11 @@ html.modal-open {
 .input-group input,
 .input-group select,
 .input-group textarea {
-  flex: 1;
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  padding: 15px 0;
+  width: 100%;
+  background: var(--white-10);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  padding: 15px;
   color: var(--white);
   font-family: inherit;
   font-size: var(--font-md);
@@ -981,15 +981,15 @@ html.modal-open {
 [dir="rtl"] .input-group input,
 [dir="rtl"] .input-group select,
 [dir="rtl"] .input-group textarea {
+  padding-right: 45px;
   text-align: right;
-  padding-left: 15px;
 }
 
 [dir="ltr"] .input-group input,
 [dir="ltr"] .input-group select,
 [dir="ltr"] .input-group textarea {
+  padding-left: 45px;
   text-align: left;
-  padding-right: 15px;
 }
 
 .input-group select option {

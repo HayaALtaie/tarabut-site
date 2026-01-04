@@ -1,4 +1,3 @@
-
 :root {
   --primary-blue: #1062a5;
   --primary-blue-dark: #0d518c;
@@ -22,7 +21,7 @@
   --white-20: rgba(255, 255, 255, 0.2);
   --white-05: rgba(255, 255, 255, 0.05);
 
-  
+
   --spacing-xs: 5px;
   --spacing-sm: 10px;
   --spacing-md: 20px;
@@ -54,7 +53,7 @@
   --transition-ease: ease;
   --transition-ease-in-out: ease-in-out;
 
-  
+
   --font-xs: 11px;
   --font-sm: 13px;
   --font-base: 14px;
@@ -187,78 +186,109 @@ section {
   display: block;
   line-height: 1;
 }
+
 html[dir="ltr"] .logo-area {
-    padding: 0 60px;
-    clip-path: polygon(0 0, calc(100% - 60px) 0, 100% 100%, 0 100%);
+  padding: 0 60px;
+  clip-path: polygon(0 0, calc(100% - 60px) 0, 100% 100%, 0 100%);
 }
 
 html[dir="ltr"] .main-nav {
-    margin-right: 0;
-    margin-left: -60px;
-    padding-left: 100px;
+  margin-right: 0;
+  margin-left: -60px;
+  padding-left: 100px;
 }
 
 html[dir="ltr"] .contact-info {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 html[dir="ltr"] .hero-subtitle {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 html[dir="ltr"] .hero-subtitle::before {
-    margin-left: 0;
-    margin-right: 15px;
+  margin-left: 0;
+  margin-right: 15px;
 }
 
 html[dir="ltr"] .hero-title {
-    line-height: 1.2;
+  line-height: 1.2;
 }
 
 html[dir="ltr"] .about-description {
-    line-height: 1.6;
+  line-height: 1.6;
 }
 
 html[dir="ltr"] .section-title {
-    line-height: 1.2;
+  line-height: 1.2;
 }
 
 html[dir="ltr"] .values-list li {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 html[dir="ltr"] .hero-title {
-    text-align: left;
+  text-align: left;
 }
 
 html[dir="ltr"] .experience-badge {
-    left: auto;
-    right: -40px;
+  left: auto;
+  right: -40px;
 }
 
 html[dir="ltr"] .blue-circle-top {
-    right: auto;
-    left: -50px;
+  right: auto;
+  left: -50px;
 }
 
 
 html[dir="ltr"] .about-text {
-    text-align: left;
+  text-align: left;
 }
 
 html[dir="ltr"] .about-container {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 
 html[dir="ltr"] .contact-number {
-    direction: ltr;
+  direction: ltr;
 }
 
 html[dir="ltr"] .exp-text {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 html[dir="ltr"] .breadcrumbs i {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* Validation Styles */
+.input-group.invalid {
+  border-color: #ff4d4d !important;
+  position: relative;
+  margin-bottom: 25px !important;
+}
+
+.input-group.invalid .icon {
+  color: #ff4d4d !important;
+}
+
+.error-msg {
+  position: absolute;
+  bottom: -22px;
+  right: 5px;
+  color: #ff4d4d;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+html[dir="rtl"] .error-msg {
+  text-align: right;
+}
+
+html[dir="ltr"] .error-msg {
+  right: auto;
+  left: 5px;
+  text-align: left;
 }

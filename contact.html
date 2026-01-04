@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="css/components/header.css" />
+    <link rel="stylesheet" href="css/components/header.css" />
     <link rel="stylesheet" href="css/components/hero.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/contact.css" />
@@ -143,7 +143,27 @@
                         </div>
                         <div class="input-group">
                             <i class="fas fa-map-marker-alt icon"></i>
-                            <input type="text" data-i18n-placeholder="field_governorate" placeholder="المحافظة">
+                            <select id="field_governorate" data-i18n-placeholder="field_governorate" required>
+                                <option value="" disabled selected data-i18n="field_governorate">المحافظة</option>
+                                <option value="بغداد" data-i18n="gov_baghdad">بغداد</option>
+                                <option value="نينوى" data-i18n="gov_nineveh">نينوى</option>
+                                <option value="البصرة" data-i18n="gov_basra">البصرة</option>
+                                <option value="صلاح الدين" data-i18n="gov_saladin">صلاح الدين</option>
+                                <option value="دهوك" data-i18n="gov_duhok">دهوك</option>
+                                <option value="أربيل" data-i18n="gov_erbil">أربيل</option>
+                                <option value="السليمانية" data-i18n="gov_sulaymaniyah">السليمانية</option>
+                                <option value="ديالى" data-i18n="gov_diyala">ديالى</option>
+                                <option value="واسط" data-i18n="gov_wasit">واسط</option>
+                                <option value="ميسان" data-i18n="gov_maysan">ميسان</option>
+                                <option value="ذي قار" data-i18n="gov_dhi_qar">ذي قار</option>
+                                <option value="المثنى" data-i18n="gov_muthanna">المثنى</option>
+                                <option value="بابل" data-i18n="gov_babylon">بابل</option>
+                                <option value="كربلاء" data-i18n="gov_karbala">كربلاء</option>
+                                <option value="النجف" data-i18n="gov_najaf">النجف</option>
+                                <option value="الانبار" data-i18n="gov_anbar">الانبار</option>
+                                <option value="الديوانية" data-i18n="gov_diwaniya">الديوانية</option>
+                                <option value="كركوك" data-i18n="gov_kirkuk">كركوك</option>
+                            </select>
                         </div>
                     </div>
                     <div class="input-group full-width">
@@ -190,6 +210,7 @@
 
     <script src="js/translation.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/contact-form.js"></script>
 </body>
 
 </html>

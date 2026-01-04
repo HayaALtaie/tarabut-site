@@ -976,6 +976,16 @@ html.modal-open {
   transition: all var(--transition-fast) var(--transition-ease);
 }
 
+[dir="rtl"] .input-group input,
+[dir="rtl"] .input-group textarea {
+  text-align: right;
+}
+
+[dir="ltr"] .input-group input,
+[dir="ltr"] .input-group textarea {
+  text-align: left;
+}
+
 .input-group textarea {
   height: 120px;
   resize: none;

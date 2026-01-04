@@ -760,6 +760,17 @@
     grid-template-columns: 1fr;
   }
 
+  .video-modal-content {
+    width: 95%;
+    max-width: 100%;
+  }
+
+  .video-modal-close {
+    top: -40px;
+    right: 0;
+    font-size: 22px;
+  }
+
   .header-inner {
     height: 70px;
   }
@@ -1224,5 +1235,15 @@
   html[dir="ltr"] .blue-circle-top {
     right: auto;
     left: -50px;
+  }
+
+  /* Video Modal Responsive */
+  .video-modal-content {
+    width: 95%;
+  }
+
+  .video-modal-close {
+    top: -45px;
+    font-size: 25px;
   }
 }

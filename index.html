@@ -4,6 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -14,7 +19,7 @@
   <link rel="stylesheet" href="css/components/footer.css">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsive.css" />
-  <title>Tarabut</title>
+  <title data-i18n="page_title_home">ترابط - الرئيسية</title>
 </head>
 
 <body>
@@ -110,6 +115,14 @@
 
   <section class="clients-slider-section">
     <div class="container">
+      <div class="clients-header">
+        <div class="section-tag">
+          <span class="dot"></span>
+          <span data-i18n="clients_tag">شركاؤنا</span>
+        </div>
+        <h2 class="section-title" data-i18n="nav_clients">عملائنا</h2>
+      </div>
+
       <div class="slider-wrapper">
         <button class="slider-arrow slider-arrow-prev" id="sliderPrev">
           <i class="fas fa-chevron-left"></i>
@@ -169,9 +182,9 @@
     <div class="services-video-container">
       <div class="video-placeholder">
         <img src="assets/images/home-banner.jpg" alt="Services Intro" />
-        <div class="play-btn">
+        <button class="play-btn" id="videoPlayBtn">
           <i class="fas fa-play"></i>
-        </div>
+        </button>
         <div class="video-dots-top"></div>
         <div class="video-circle-left"></div>
         <div class="video-blue-dot-bottom"></div>
@@ -190,45 +203,39 @@
 
         <div class="services-grid">
           <div class="service-card">
-            <div class="service-icon"><i class="fas fa-city"></i></div>
-            <h3 data-i18n="service_1_title">تموين وبناء المدن</h3>
-            <p data-i18n="service_1_desc">تقديم الخدمات اللوجستية والإنشائية المتكاملة.</p>
+            <div class="service-icon"><i class="fas" data-i18n-icon="service_4_icon"></i></div>
+            <h3 data-i18n="service_4_title">حجز الفنادق والطيران</h3>
+            <p data-i18n="service_4_desc">حجزوات فندقية بنظام 24/7 للوافدين والمقيمين بالعراق</p>
           </div>
           <div class="service-card">
-            <div class="service-icon"><i class="fas fa-hammer"></i></div>
-            <h3 data-i18n="service_2_title">تأهيل المنشآت</h3>
-            <p data-i18n="service_2_desc">صيانة وتأهيل المباني الحكومية والتجارية.</p>
+            <div class="service-icon"><i class="fas" data-i18n-icon="service_3_icon"></i></div>
+            <h3 data-i18n="service_3_title">الصيانة</h3>
+            <p data-i18n="service_3_desc">صيانة دورية للمحافظ على الأبنية والمؤسسات</p>
           </div>
           <div class="service-card">
-            <div class="service-icon"><i class="fas fa-tools"></i></div>
-            <h3 data-i18n="service_3_title">صيانة المنشآت</h3>
-            <p data-i18n="service_3_desc">خدمات الصيانة الدورية للأجهزة والمرافق.</p>
+            <div class="service-icon"><i class="fas" data-i18n-icon="service_2_icon"></i></div>
+            <h3 data-i18n="service_2_title">مراقبة الكاميرات</h3>
+            <p data-i18n="service_2_desc">حماية الممتلكات والأفراد باستخدام أنظمة الكاميرات الحديثة</p>
+          </div>
+          <div class="service-card service-card-primary">
+            <div class="service-icon"><i class="fas" data-i18n-icon="service_1_icon"></i></div>
+            <h3 data-i18n="service_1_title">خدمات الحراسة</h3>
+            <p data-i18n="service_1_desc">نوفر خدمة الحراسة للشركات والأفراد والمنشآت في العراق</p>
           </div>
           <div class="service-card">
-            <div class="service-icon"><i class="fas fa-wrench"></i></div>
-            <h3 data-i18n="service_4_title">تجهيز المواد</h3>
-            <p data-i18n="service_4_desc">توفير المعدات والمواد الإنشائية اللازمة.</p>
-          </div>
-
-          <div class="service-card">
-            <div class="service-icon"><i class="fas fa-hands-wash"></i></div>
+            <div class="service-icon"><i class="fas" data-i18n-icon="service_5_icon"></i></div>
             <h3 data-i18n="service_5_title">الضيافة والتنظيف</h3>
-            <p data-i18n="service_5_desc">خدمات التنظيف الاحترافية والضيافة المتكاملة.</p>
+            <p data-i18n="service_5_desc">نملك فريقاً مسؤولاً عن ضيافة ونظافة عشرات الشركات العراقية</p>
           </div>
           <div class="service-card">
-            <div class="service-icon"><i class="fas fa-bus"></i></div>
-            <h3 data-i18n="service_6_title">النقل السياحي</h3>
-            <p data-i18n="service_6_desc">خدمات النقل البري والباصات الحديثة والمتطورة.</p>
+            <div class="service-icon"><i class="fas" data-i18n-icon="service_6_icon"></i></div>
+            <h3 data-i18n="service_6_title">تأهيل المباني</h3>
+            <p data-i18n="service_6_desc">إعادة تأهيل المباني وفق خطط معمارية هندسية مدروسة</p>
           </div>
           <div class="service-card">
-            <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
-            <h3 data-i18n="service_7_title">حماية المنشآت</h3>
-            <p data-i18n="service_7_desc">خدمات أمن وحماية المنشآت والأفراد باحترافية.</p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon"><i class="fas fa-tasks"></i></div>
-            <h3 data-i18n="service_8_title">إدارة المشاريع</h3>
-            <p data-i18n="service_8_desc">إدارة وتخطيط المشاريع الإنشائية والخدمية بدقة.</p>
+            <div class="service-icon"><i class="fas" data-i18n-icon="service_7_icon"></i></div>
+            <h3 data-i18n="service_7_title">حجز المركبات</h3>
+            <p data-i18n="service_7_desc">نقل الأشخاص والحمولات بقيادة سائقين محترفين</p>
           </div>
         </div>
       </div>
@@ -245,12 +252,11 @@
 
       <div class="work-slider-wrapper">
         <button class="work-slider-arrow work-prev" id="workPrev" aria-label="Previous slide">
-          <i class="fas fa-chevron-left"></i>
+          <i class="fas fa-chevron-right"></i>
         </button>
 
         <div class="work-slider-container" id="workSliderContainer">
           <div class="work-slider-track" id="workSliderTrack">
-            <!-- Example images using Unsplash for demonstration -->
             <div class="work-item">
               <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80"
                 alt="Work 1">
@@ -279,7 +285,7 @@
         </div>
 
         <button class="work-slider-arrow work-next" id="workNext" aria-label="Next slide">
-          <i class="fas fa-chevron-right"></i>
+          <i class="fas fa-chevron-left"></i>
         </button>
       </div>
 
@@ -357,19 +363,19 @@
         <!-- Member 1 -->
         <div class="team-card">
           <div class="member-image">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80"
-              alt="Mustafa Abbas Salman">
+            <img src="assets/images/team/1.jpg"
+              alt="Haider Dhafer Mahdi">
           </div>
           <div class="member-info">
-            <h3 data-i18n="member_1_name">مصطفى عباس سلمان</h3>
-            <p data-i18n="member_1_role">مسؤول قسم تخطيط وصيانة المنشآت</p>
+            <h3 data-i18n="member_1_name">حيدر ظافر مهدي</h3>
+            <p data-i18n="member_1_role">قائد فريق خدمات التنظيف والضيافة</p>
           </div>
         </div>
 
         <!-- Member 2 -->
         <div class="team-card">
           <div class="member-image">
-            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80"
+            <img src="assets/images/team/2.jpg"
               alt="Omar Sabbar">
           </div>
           <div class="member-info">
@@ -381,31 +387,31 @@
         <!-- Member 3 -->
         <div class="team-card">
           <div class="member-image">
-            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80"
-              alt="Haider Dhafer Mahdi">
+            <img src="assets/images/team/3.jpg"
+              alt="Mustafa Abbas Salman">
           </div>
           <div class="member-info">
-            <h3 data-i18n="member_3_name">حيدر ظافر مهدي</h3>
-            <p data-i18n="member_3_role">قائد فريق خدمات التنظيف والضيافة</p>
+            <h3 data-i18n="member_3_name">مصطفى عباس سلمان</h3>
+            <p data-i18n="member_3_role">مسؤول قسم تخطيط وصيانة المنشآت</p>
           </div>
         </div>
 
         <!-- Member 4 -->
         <div class="team-card">
           <div class="member-image">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
-              alt="Thair Abdul Hamza Kamar">
+            <img src="assets/images/team/4.jpg"
+              alt="Hassan Hatem Yassin">
           </div>
           <div class="member-info">
-            <h3 data-i18n="member_4_name">ثائر عبد الحمزة كمر</h3>
-            <p data-i18n="member_4_role">مسؤول أمن أقدم</p>
+            <h3 data-i18n="member_4_name">حسن حاتم ياسين</h3>
+            <p data-i18n="member_4_role">مسؤول قسم ضبط الجودة</p>
           </div>
         </div>
 
         <!-- Member 5 -->
         <div class="team-card">
           <div class="member-image">
-            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+            <img src="assets/images/team/5.jpg"
               alt="Yasser Mohammed Mahmoud">
           </div>
           <div class="member-info">
@@ -417,36 +423,36 @@
         <!-- Member 6 -->
         <div class="team-card">
           <div class="member-image">
-            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80"
-              alt="Hassan Hatem Yassin">
+            <img src="assets/images/team/6.jpg"
+              alt="Thair Abdul Hamza Kamar">
           </div>
           <div class="member-info">
-            <h3 data-i18n="member_6_name">حسن حاتم ياسين</h3>
-            <p data-i18n="member_6_role">مسؤول قسم ضبط الجودة</p>
+            <h3 data-i18n="member_6_name">ثائر عبد الحمزة كمر</h3>
+            <p data-i18n="member_6_role">مسؤول أمن أقدم</p>
           </div>
         </div>
 
         <!-- Member 7 -->
         <div class="team-card">
           <div class="member-image">
-            <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&fit=crop&w=400&q=80"
-              alt="Ibrahim Younis Naji">
+            <img src="assets/images/team/7.jpg"
+              alt="Fakher Shafeeq Obaid">
           </div>
           <div class="member-info">
-            <h3 data-i18n="member_7_name">ابراهيم يونس ناجي</h3>
-            <p data-i18n="member_7_role">قائد فريق تخطيط المنشآت</p>
+            <h3 data-i18n="member_7_name">فاخر شفيق عبيد</h3>
+            <p data-i18n="member_7_role">قائد فريق أنظمة المراقبة</p>
           </div>
         </div>
 
         <!-- Member 8 -->
         <div class="team-card">
           <div class="member-image">
-            <img src="https://images.unsplash.com/photo-1504257404462-fad39e6939cc?auto=format&fit=crop&w=400&q=80"
-              alt="Fakher Shafeeq Obaid">
+            <img src="assets/images/team/8.jpg"
+              alt="Ibrahim Younis Naji">
           </div>
           <div class="member-info">
-            <h3 data-i18n="member_8_name">فاخر شفيق عبيد</h3>
-            <p data-i18n="member_8_role">قائد فريق أنظمة المراقبة</p>
+            <h3 data-i18n="member_8_name">ابراهيم يونس ناجي</h3>
+            <p data-i18n="member_8_role">قائد فريق تخطيط المنشآت</p>
           </div>
         </div>
       </div>
@@ -457,20 +463,20 @@
     <div class="container">
       <div class="stats-grid">
         <div class="stat-item">
-          <div class="stat-number">15</div>
-          <div class="stat-title" data-i18n="stats_clients">عدد العملاء</div>
+          <div class="stat-number" data-target="1300">0</div>
+          <div class="stat-title" data-i18n="stats_employees">عدد الموظفين</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">18</div>
-          <div class="stat-title" data-i18n="stats_gov">خدماتنا في المحافظات</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">95</div>
+          <div class="stat-number" data-target="95">0</div>
           <div class="stat-title" data-i18n="stats_projects">عدد المشاريع</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">1,300</div>
-          <div class="stat-title" data-i18n="stats_employees">عدد الموظفين</div>
+          <div class="stat-number" data-target="18">0</div>
+          <div class="stat-title" data-i18n="stats_gov">خدماتنا في المحافظات</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="15">0</div>
+          <div class="stat-title" data-i18n="stats_clients">عدد العملاء</div>
         </div>
       </div>
     </div>
@@ -596,7 +602,7 @@
         <nav class="footer-nav">
           <ul>
             <li><a href="#" data-i18n="nav_home">الرئيسية</a></li>
-            <li><a href="about.html" data-i18n="nav_about">من نحن</a></li>
+            <li><a href="about-us.html" data-i18n="nav_about">من نحن</a></li>
             <li><a href="clients.html" data-i18n="nav_clients">عملائنا</a></li>
             <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
           </ul>
@@ -611,6 +617,24 @@
       <i class="fas fa-chevron-up"></i>
     </button>
   </footer>
+
+  <div id="videoModal" class="video-modal">
+    <div class="video-modal-content">
+      <button class="video-modal-close" id="videoModalClose">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="video-iframe-container">
+        <iframe id="videoIframe"
+                width="100%"
+                height="100%"
+                src=""
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
 
   <script src="js/translation.js"></script>
   <script src="js/main.js"></script>

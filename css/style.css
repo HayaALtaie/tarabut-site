@@ -264,8 +264,13 @@ html[dir="ltr"] .breadcrumbs i {
 }
 
 /* Validation Styles */
-.input-group.invalid {
+.input-group.invalid input,
+.input-group.invalid select,
+.input-group.invalid textarea {
   border-color: #ff4d4d !important;
+}
+
+.input-group.invalid {
   position: relative;
   margin-bottom: 25px !important;
 }

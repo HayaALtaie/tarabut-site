@@ -1,4 +1,3 @@
-
 .clients-slider-section {
   padding: var(--spacing-4xl) 0;
   background-color: var(--white);
@@ -292,6 +291,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -302,6 +302,7 @@
     transform: translateY(50px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -955,6 +956,11 @@ html.modal-open {
 [dir="rtl"] .input-group .icon {
   left: auto;
   right: 15px;
+}
+
+.input-group:has(textarea) .icon {
+  top: 20px;
+  transform: none;
 }
 
 .input-group input,

@@ -1,5 +1,3 @@
-
-
 .contact-cards-section {
     padding: 80px 0;
     background-color: #fafafa;
@@ -139,6 +137,11 @@
 
 [dir="ltr"] .contact-full-form .input-group i {
     left: 20px;
+}
+
+.contact-full-form .input-group:has(textarea) i {
+    top: 22px;
+    transform: none;
 }
 
 .contact-full-form input,

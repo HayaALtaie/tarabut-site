@@ -145,6 +145,7 @@
 }
 
 .contact-full-form input,
+.contact-full-form select,
 .contact-full-form textarea {
     width: 100%;
     background-color: transparent;
@@ -158,18 +159,26 @@
 }
 
 [dir="rtl"] .contact-full-form input,
+[dir="rtl"] .contact-full-form select,
 [dir="rtl"] .contact-full-form textarea {
     padding-right: 50px;
     text-align: right;
 }
 
 [dir="ltr"] .contact-full-form input,
+[dir="ltr"] .contact-full-form select,
 [dir="ltr"] .contact-full-form textarea {
     padding-left: 50px;
     text-align: left;
 }
 
+.contact-full-form select option {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
 .contact-full-form input:focus,
+.contact-full-form select:focus,
 .contact-full-form textarea:focus {
     outline: none;
     border-color: var(--sky-blue);

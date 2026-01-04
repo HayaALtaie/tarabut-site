@@ -363,8 +363,7 @@
         <!-- Member 1 -->
         <div class="team-card">
           <div class="member-image">
-            <img src="assets/images/team/1.jpg"
-              alt="Haider Dhafer Mahdi">
+            <img src="assets/images/team/1.jpg" alt="Haider Dhafer Mahdi">
           </div>
           <div class="member-info">
             <h3 data-i18n="member_1_name">حيدر ظافر مهدي</h3>
@@ -375,8 +374,7 @@
         <!-- Member 2 -->
         <div class="team-card">
           <div class="member-image">
-            <img src="assets/images/team/2.jpg"
-              alt="Omar Sabbar">
+            <img src="assets/images/team/2.jpg" alt="Omar Sabbar">
           </div>
           <div class="member-info">
             <h3 data-i18n="member_2_name">عمر صبار</h3>
@@ -387,8 +385,7 @@
         <!-- Member 3 -->
         <div class="team-card">
           <div class="member-image">
-            <img src="assets/images/team/3.jpg"
-              alt="Mustafa Abbas Salman">
+            <img src="assets/images/team/3.jpg" alt="Mustafa Abbas Salman">
           </div>
           <div class="member-info">
             <h3 data-i18n="member_3_name">مصطفى عباس سلمان</h3>
@@ -399,8 +396,7 @@
         <!-- Member 4 -->
         <div class="team-card">
           <div class="member-image">
-            <img src="assets/images/team/4.jpg"
-              alt="Hassan Hatem Yassin">
+            <img src="assets/images/team/4.jpg" alt="Hassan Hatem Yassin">
           </div>
           <div class="member-info">
             <h3 data-i18n="member_4_name">حسن حاتم ياسين</h3>
@@ -411,8 +407,7 @@
         <!-- Member 5 -->
         <div class="team-card">
           <div class="member-image">
-            <img src="assets/images/team/5.jpg"
-              alt="Yasser Mohammed Mahmoud">
+            <img src="assets/images/team/5.jpg" alt="Yasser Mohammed Mahmoud">
           </div>
           <div class="member-info">
             <h3 data-i18n="member_5_name">ياسر محمد محمود</h3>
@@ -423,8 +418,7 @@
         <!-- Member 6 -->
         <div class="team-card">
           <div class="member-image">
-            <img src="assets/images/team/6.jpg"
-              alt="Thair Abdul Hamza Kamar">
+            <img src="assets/images/team/6.jpg" alt="Thair Abdul Hamza Kamar">
           </div>
           <div class="member-info">
             <h3 data-i18n="member_6_name">ثائر عبد الحمزة كمر</h3>
@@ -435,8 +429,7 @@
         <!-- Member 7 -->
         <div class="team-card">
           <div class="member-image">
-            <img src="assets/images/team/7.jpg"
-              alt="Fakher Shafeeq Obaid">
+            <img src="assets/images/team/7.jpg" alt="Fakher Shafeeq Obaid">
           </div>
           <div class="member-info">
             <h3 data-i18n="member_7_name">فاخر شفيق عبيد</h3>
@@ -447,8 +440,7 @@
         <!-- Member 8 -->
         <div class="team-card">
           <div class="member-image">
-            <img src="assets/images/team/8.jpg"
-              alt="Ibrahim Younis Naji">
+            <img src="assets/images/team/8.jpg" alt="Ibrahim Younis Naji">
           </div>
           <div class="member-info">
             <h3 data-i18n="member_8_name">ابراهيم يونس ناجي</h3>
@@ -551,7 +543,27 @@
               </div>
               <div class="input-group">
                 <i class="fas fa-map-marker-alt icon"></i>
-                <input type="text" data-i18n-placeholder="field_governorate" placeholder="المحافظة">
+                <select id="field_governorate" data-i18n-placeholder="field_governorate" required>
+                  <option value="" disabled selected data-i18n="field_governorate">المحافظة</option>
+                  <option value="بغداد" data-i18n="gov_baghdad">بغداد</option>
+                  <option value="نينوى" data-i18n="gov_nineveh">نينوى</option>
+                  <option value="البصرة" data-i18n="gov_basra">البصرة</option>
+                  <option value="صلاح الدين" data-i18n="gov_saladin">صلاح الدين</option>
+                  <option value="دهوك" data-i18n="gov_duhok">دهوك</option>
+                  <option value="أربيل" data-i18n="gov_erbil">أربيل</option>
+                  <option value="السليمانية" data-i18n="gov_sulaymaniyah">السليمانية</option>
+                  <option value="ديالى" data-i18n="gov_diyala">ديالى</option>
+                  <option value="واسط" data-i18n="gov_wasit">واسط</option>
+                  <option value="ميسان" data-i18n="gov_maysan">ميسان</option>
+                  <option value="ذي قار" data-i18n="gov_dhi_qar">ذي قار</option>
+                  <option value="المثنى" data-i18n="gov_muthanna">المثنى</option>
+                  <option value="بابل" data-i18n="gov_babylon">بابل</option>
+                  <option value="كربلاء" data-i18n="gov_karbala">كربلاء</option>
+                  <option value="النجف" data-i18n="gov_najaf">النجف</option>
+                  <option value="الانبار" data-i18n="gov_anbar">الانبار</option>
+                  <option value="الديوانية" data-i18n="gov_diwaniya">الديوانية</option>
+                  <option value="كركوك" data-i18n="gov_kirkuk">كركوك</option>
+                </select>
               </div>
             </div>
             <div class="input-group full-width">
@@ -624,13 +636,9 @@
         <i class="fas fa-times"></i>
       </button>
       <div class="video-iframe-container">
-        <iframe id="videoIframe"
-                width="100%"
-                height="100%"
-                src=""
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
+        <iframe id="videoIframe" width="100%" height="100%" src="" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
         </iframe>
       </div>
     </div>
@@ -638,6 +646,7 @@
 
   <script src="js/translation.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/contact-form.js"></script>
 </body>
 
 </html>

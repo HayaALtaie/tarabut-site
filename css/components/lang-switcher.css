@@ -1,0 +1,80 @@
+.lang-switcher {
+    position: fixed;
+    bottom: 0;
+    right: 40px;
+    z-index: 9999;
+    background: linear-gradient(180deg, #1062a5 0%, #3b82f6 100%);
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column-reverse;
+    width: 130px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0;
+    overflow: hidden;
+}
+
+.lang-btn-item {
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-family: 'Cairo', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+/* The active language or the one at the bottom is always visible */
+.lang-btn-item.active {
+    height: 55px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* On hover, show all items */
+.lang-switcher:hover {
+    box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.lang-switcher:hover .lang-btn-item {
+    height: 55px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.lang-btn-item:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Ensure the switcher stays on the right even in LTR if requested */
+html[dir="ltr"] .lang-switcher,
+html[dir="rtl"] .lang-switcher {
+    right: 40px;
+    left: auto;
+}
+
+@media (max-width: 768px) {
+    .lang-switcher {
+        right: 20px;
+        width: 110px;
+    }
+
+    .lang-btn-item {
+        font-size: 14px;
+        height: 0;
+    }
+
+    .lang-btn-item.active,
+    .lang-switcher:hover .lang-btn-item {
+        height: 48px;
+    }
+}

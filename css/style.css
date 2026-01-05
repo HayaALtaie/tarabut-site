@@ -121,27 +121,6 @@ h6 {
   text-align: center;
 }
 
-.lang-btn {
-  position: fixed;
-  bottom: var(--spacing-lg);
-  right: var(--spacing-lg);
-  background-color: var(--primary-blue);
-  color: var(--white);
-  border: none;
-  padding: var(--spacing-sm) var(--spacing-md);
-  border-radius: var(--radius-3xl);
-  font-weight: var(--font-bold);
-  cursor: pointer;
-  z-index: 1000;
-  box-shadow: var(--shadow-md);
-  transition: all var(--transition-fast) var(--transition-ease);
-}
-
-.lang-btn:hover {
-  background-color: var(--primary-blue-dark);
-  transform: translateY(-2px);
-}
-
 .section-tag {
   display: flex;
   align-items: center;

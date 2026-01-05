@@ -1,6 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const langToggle = document.getElementById('lang-toggle');
     const html = document.documentElement;
+
+    function updateLangSwitcher(lang) {
+        const langItems = document.querySelectorAll('.lang-btn-item');
+        langItems.forEach(item => {
+            if (item.getAttribute('data-lang') === lang) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+    }
 
     function setLanguage(lang) {
         const dir = lang === 'ar' ? 'rtl' : 'ltr';
@@ -9,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         html.setAttribute('dir', dir);
 
         localStorage.setItem('selectedLang', lang);
+        updateLangSwitcher(lang);
 
         if (typeof translations !== 'undefined') {
             const t = translations[lang];
@@ -66,8 +77,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoUrl = 'https://www.youtube.com/embed/fUAxDpxcSiU?autoplay=1&controls=1&rel=0&modestbranding=1';
 
     function closeVideoModal() {
-        videoModal.classList.remove('active');
-        videoIframe.src = '';
+        if (videoModal) videoModal.classList.remove('active');
+        if (videoIframe) videoIframe.src = '';
         document.body.classList.remove('modal-open');
         document.documentElement.classList.remove('modal-open');
     }
@@ -114,13 +125,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    if (langToggle) {
-        langToggle.addEventListener('click', () => {
+    const langSwitcherItems = document.querySelectorAll('.lang-btn-item');
+    langSwitcherItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const newLang = item.getAttribute('data-lang');
             const currentLang = html.getAttribute('lang');
-            const newLang = currentLang === 'ar' ? 'en' : 'ar';
-            setLanguage(newLang);
+            if (newLang !== currentLang) {
+                setLanguage(newLang);
+            }
         });
-    }
+    });
 
     const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
     const mainNav = document.getElementById('main-nav');
@@ -171,13 +185,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         function getSlideWidth() {
             const slideItem = sliderTrack.querySelector('.slide-item');
-            const slideStyle = window.getComputedStyle(slideItem);
             const slideWidth = slideItem.offsetWidth;
             const gap = parseInt(window.getComputedStyle(sliderTrack).gap) || 40;
             return slideWidth + gap;
         }
 
         function createDots() {
+            if (!dotsContainer) return;
             dotsContainer.innerHTML = '';
             for (let i = 0; i < slideCount; i++) {
                 const dot = document.createElement('button');
@@ -189,6 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         function updateDots() {
+            if (!dotsContainer) return;
             const dots = dotsContainer.querySelectorAll('.slider-dot');
             if (dots.length === 0) return;
             const activeDotIndex = ((currentIndex % slideCount) + slideCount) % slideCount;
@@ -254,7 +269,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-    
         function startAutoSlide() {
             autoSlideInterval = setInterval(nextSlide, 3000);
         }

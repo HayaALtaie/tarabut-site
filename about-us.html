@@ -1,367 +1,348 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="ar">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
-    <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/components/header.css" />
-    <link rel="stylesheet" href="css/components/hero.css" />
-    <link rel="stylesheet" href="css/components/about-section.css" />
-    <link rel="stylesheet" href="css/about.css" />
-    <link rel="stylesheet" href="css/components/footer.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <title data-i18n="page_title_about">ترابط - من نحن</title>
-  </head>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/images/favicon.png" />
 
-  <body>
-    <button id="lang-toggle" class="lang-btn" data-i18n="lang_btn">
-      🇺🇸 English
-    </button>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/components/header.css" />
+  <link rel="stylesheet" href="css/components/hero.css" />
+  <link rel="stylesheet" href="css/components/about-section.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/components/footer.css" />
+  <link rel="stylesheet" href="css/components/lang-switcher.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <title data-i18n="page_title_about">ترابط - من نحن</title>
+</head>
 
-    <header class="site-header">
-      <div class="header-inner">
-        <div class="logo-area">
-          <div class="logo-shape">
-            <img src="assets/images/logo-tarabut.png" alt="Tarabut Logo" />
+<body>
+  <div class="lang-switcher">
+    <button class="lang-btn-item" data-lang="en">English</button>
+    <button class="lang-btn-item" data-lang="ar">Arabic</button>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-area">
+        <div class="logo-shape">
+          <img src="assets/images/logo-tarabut.png" alt="Tarabut Logo" />
+        </div>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li>
+            <a href="index.html" data-i18n="nav_home">الرئيسية</a>
+          </li>
+          <li><a href="about-us.html" class="active" data-i18n="nav_about">من نحن</a></li>
+          <li>
+            <a href="services.html" data-i18n="nav_services">الخدمات</a>
+          </li>
+          <li><a href="news.html" data-i18n="nav_news">الاخبار</a></li>
+          <li><a href="clients.html" data-i18n="nav_clients">عملائنا</a></li>
+
+          <li>
+            <a href="contact.html" data-i18n="nav_contact">تواصل معنا</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="top-bar">
+        <div class="contact-info">
+          <span data-i18n="contact_number">07834434800</span>
+          <div class="phone-icon-circle">
+            <i class="fas fa-phone-alt"></i>
           </div>
-          <button
-            class="mobile-menu-toggle"
-            id="mobile-menu-toggle"
-            aria-label="Toggle menu"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero page-hero about-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <div class="page-title-box">
+        <h1 class="page-title" data-i18n="nav_about">من نحن</h1>
+        <div class="breadcrumbs">
+          <a href="index.html" data-i18n="nav_home">الرئيسية</a>
+          <i class="fas fa-arrow-left"></i>
+          <span data-i18n="nav_about">من نحن</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-us" id="about">
+    <div class="container about-container">
+      <div class="about-text">
+        <div class="section-tag">
+          <span class="dot"></span>
+          <span data-i18n="about_tag">عن ترابط</span>
+        </div>
+        <h2 class="section-title" data-i18n="about_title">من نحن</h2>
+        <p class="about-description" data-i18n="about_desc">
+          شركة ترابط للخدمات والمقاولات العامة...
+        </p>
+
+        <div class="about-contact">
+          <span class="contact-label" data-i18n="about_contact_label">اتصل بنا</span>
+          <a href="tel:077834434800" class="contact-number" data-i18n="about_contact_number">077834434800</a>
+        </div>
+      </div>
+
+      <div class="about-image">
+        <div class="image-wrapper">
+          <img src="assets/images/about-us.jpeg" alt="About Tarabut Meeting" />
+          <div class="blue-circle-top"></div>
+          <div class="experience-badge">
+            <span class="exp-year" data-i18n="year_exp">15</span>
+            <span class="exp-text" data-i18n="year_exp_text">سنة من <br />
+              الخبرات</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-section">
+    <div class="container">
+      <div class="features-header">
+        <h2 class="section-title" data-i18n="features_title">
+          ما يميز اعمالنا
+        </h2>
+      </div>
+
+      <div class="features-grid">
+        <!-- Row 1 -->
+        <div class="feature-item">
+          <div class="feature-content">
+            <h3 data-i18n="feature_1_title">سرعة الاستجابة</h3>
+            <p data-i18n="feature_1_desc">
+              نحرص على الاستجابة السريعة لطلباتكم، ملتزمين بالجدول الزمني
+              الخاص بكم دون الحاجة لانتظار طويل.
+            </p>
+          </div>
+          <div class="feature-icon-box">
+            <i class="fas fa-rocket"></i>
+          </div>
         </div>
 
-        <nav class="main-nav" id="main-nav">
-          <ul>
-            <li>
-              <a href="index.html" data-i18n="nav_home">الرئيسية</a>
-            </li>
-            <li><a href="about-us.html" class="active" data-i18n="nav_about">من نحن</a></li>
-            <li>
-              <a href="services.html" data-i18n="nav_services">الخدمات</a>
-            </li>
-            <li><a href="news.html" data-i18n="nav_news">الاخبار</a></li>
-            <li><a href="clients.html" data-i18n="nav_clients">عملائنا</a></li>
+        <div class="feature-item">
+          <div class="feature-content">
+            <h3 data-i18n="feature_2_title">العمل المستمر</h3>
+            <p data-i18n="feature_2_desc">
+              نقدم خدماتنا على مدار الساعة وطوال أيام الأسبوع لضمان تلبية
+              احتياجاتكم في أي وقت تحتاجون فيه.
+            </p>
+          </div>
+          <div class="feature-icon-box">
+            <i class="fas fa-moon"></i>
+          </div>
+        </div>
 
-            <li>
-              <a href="contact.html" data-i18n="nav_contact">تواصل معنا</a>
-            </li>
+        <div class="feature-item">
+          <div class="feature-content">
+            <h3 data-i18n="feature_3_title">شرح الخيارات بوضوح</h3>
+            <p data-i18n="feature_3_desc">
+              نقدم لكم شرحاً وافياً لجميع الخيارات المتاحة، ونساعدكم في اختيار
+              الخيار الأفضل لموقعكم بوضوح ودقة.
+            </p>
+          </div>
+          <div class="feature-icon-box">
+            <i class="fas fa-list-check"></i>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="feature-item">
+          <div class="feature-content">
+            <h3 data-i18n="feature_4_title">ضمان التعاقد والمتابعة</h3>
+            <p data-i18n="feature_4_desc">
+              نضمن التعاقد ونقوم بالمتابعة لضمان راحتكم وثقتكم في خدماتنا.
+            </p>
+          </div>
+          <div class="feature-icon-box">
+            <i class="fas fa-file-contract"></i>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-content">
+            <h3 data-i18n="feature_5_title">
+              المواد المستخدمة ذات المعايير الدولية
+            </h3>
+            <p data-i18n="feature_5_desc">
+              نستخدم فقط المواد المطابقة للمعايير الدولية للسلامة لضمان جودة
+              العمل وسلامة المواقع.
+            </p>
+          </div>
+          <div class="feature-icon-box">
+            <i class="fas fa-certificate"></i>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-content">
+            <h3 data-i18n="feature_6_title">تقديم التوصيات الهامة</h3>
+            <p data-i18n="feature_6_desc">
+              نقدم توصيات هامة قبل وخلال تنفيذ المشاريع بهدف ضمان رضاكم التام
+              عن النتائج النهائية.
+            </p>
+          </div>
+          <div class="feature-icon-box">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="feature-item">
+          <div class="feature-content">
+            <h3 data-i18n="feature_7_title">العمالة المؤهلة</h3>
+            <p data-i18n="feature_7_desc">
+              يتمتع فريقنا بكفاءة عالية ويتعامل مع مشكلاتكم على الفور وبطريقة
+              سريعة وفعالة لضمان تقديم الحلول المناسبة لكل تحدي.
+            </p>
+          </div>
+          <div class="feature-icon-box">
+            <i class="fas fa-user-gear"></i>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-content">
+            <h3 data-i18n="feature_8_title">أنظمة متابعة العملاء</h3>
+            <p data-i18n="feature_8_desc">
+              نتميز بأنظمة متقدمة لمتابعة العملاء تضمن التواصل الفعال وتلبية
+              جميع احتياجاتكم بدقة وفعالية.
+            </p>
+          </div>
+          <div class="feature-icon-box">
+            <i class="fas fa-desktop"></i>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-content">
+            <h3 data-i18n="feature_9_title">الاهتمام بقياس رضا العملاء</h3>
+            <p data-i18n="feature_9_desc">
+              نولي اهتماماً دائماً بقياس مدى رضا العملاء عن الخدمة المقدمة،
+              ونسعى جاهدين لتحسين الجودة وتقديم أفضل الخدمات.
+            </p>
+          </div>
+          <div class="feature-icon-box">
+            <i class="fas fa-gauge-high"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="detailed-values-section">
+    <div class="container">
+      <div class="values-header">
+        <h2 class="section-title" data-i18n="values_section_title">قيمنا</h2>
+        <p class="subtitle" data-i18n="values_section_subtitle">
+          تؤمن في شركة ترابط بمجموعة من القيم الأساسية التي تشكل اساس عملنا
+          وتوجهنا في جميع تعاملاتنا مع عملائنا. هذه القيم هي:
+        </p>
+      </div>
+
+      <div class="values-items-container">
+        <div class="value-detailed-item">
+          <div class="value-detailed-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="value-detailed-content">
+            <h3 data-i18n="detailed_value_1_title">
+              أهمية النمو المستدام والمسؤول
+            </h3>
+            <p data-i18n="detailed_value_1_desc">
+              حيث نقيس نجاحنا ليس فقط من خلال الأرباح التجارية، بل أيضا من
+              خلال تأثيرنا الإيجابي على البيئة والمجتمع. نحن نعمل بجدية لتحقيق
+              النمو الذي يعود بالنفع على جميع الفاعلين وأصحاب المصلحة، مع
+              الحفاظ على توازن مستدام بين الجوانب الاقتصادية والبيئية
+              والاجتماعية.
+            </p>
+          </div>
+        </div>
+
+        <div class="value-detailed-item">
+          <div class="value-detailed-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="value-detailed-content">
+            <h3 data-i18n="detailed_value_2_title">أهمية العمل الجماعي</h3>
+            <p data-i18n="detailed_value_2_desc">
+              كمحرك للتطور والنجاح. نحن نعمل على كسر حواجز العزلة، وتعزيز
+              ثقافة التعاون بين مختلف الأقسام والفرق، حيث يتم تمكين كل فرد من
+              المساهمة بفاعلية في تحقيق أهدافنا المشتركة ونجاحنا الجماعي.
+            </p>
+          </div>
+        </div>
+
+        <div class="value-detailed-item">
+          <div class="value-detailed-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="value-detailed-content">
+            <h3 data-i18n="detailed_value_3_title">التركيز على العملاء</h3>
+            <p data-i18n="detailed_value_3_desc">
+              هو أساس نجاحنا. نحن نسعى جاهدين لبناء علاقات ثقة قوية مع
+              عملائنا، حيث نستمع بعمق إلى احتياجاتهم ونلتزم بتحقيقها بكل دقة
+              ومهنية. نحن لا نكتفي بتحقيق الوعود، بل نسعى دائما لتجاوز
+              توقعاتهم وتقديم خدمات تفوق ما يتوقعونه.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <div class="footer-logo">
+          <img src="assets/images/logo-tarabut.png" alt="Tarabut Logo" />
+          <div class="logo-text">
+            <span>ترابط</span>
+            <span>Tarabut</span>
+          </div>
+        </div>
+
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#" data-i18n="nav_home">الرئيسية</a></li>
+            <li><a href="about-us.html" data-i18n="nav_about">من نحن</a></li>
+            <li><a href="clients.html" data-i18n="nav_clients">عملاؤنا</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
           </ul>
         </nav>
-
-        <div class="top-bar">
-          <div class="contact-info">
-            <span data-i18n="contact_number">07834434800</span>
-            <div class="phone-icon-circle">
-              <i class="fas fa-phone-alt"></i>
-            </div>
-          </div>
-        </div>
       </div>
-    </header>
-
-    <section class="hero page-hero about-hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-content container">
-        <div class="page-title-box">
-          <h1 class="page-title" data-i18n="nav_about">من نحن</h1>
-          <div class="breadcrumbs">
-            <a href="index.html" data-i18n="nav_home">الرئيسية</a>
-            <i class="fas fa-arrow-left"></i>
-            <span data-i18n="nav_about">من نحن</span>
-          </div>
-        </div>
+      <div class="footer-copyright">
+        <p data-i18n="footer_copy">
+          Copyright 2025 Tarabut. All Rights Reserved
+        </p>
       </div>
-    </section>
+    </div>
 
-    <section class="about-us" id="about">
-      <div class="container about-container">
-        <div class="about-text">
-          <div class="section-tag">
-            <span class="dot"></span>
-            <span data-i18n="about_tag">عن ترابط</span>
-          </div>
-          <h2 class="section-title" data-i18n="about_title">من نحن</h2>
-          <p class="about-description" data-i18n="about_desc">
-            شركة ترابط للخدمات والمقاولات العامة...
-          </p>
+    <button id="backToTop" class="back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+  </footer>
 
-          <div class="about-contact">
-            <span class="contact-label" data-i18n="about_contact_label"
-              >اتصل بنا</span
-            >
-            <a
-              href="tel:077834434800"
-              class="contact-number"
-              data-i18n="about_contact_number"
-              >077834434800</a
-            >
-          </div>
-        </div>
+  <script src="js/translation.js"></script>
+  <script src="js/main.js"></script>
+</body>
 
-        <div class="about-image">
-          <div class="image-wrapper">
-            <img
-              src="assets/images/about-us.jpeg"
-              alt="About Tarabut Meeting"
-            />
-            <div class="blue-circle-top"></div>
-            <div class="experience-badge">
-              <span class="exp-year" data-i18n="year_exp">15</span>
-              <span class="exp-text" data-i18n="year_exp_text"
-                >سنة من <br />
-                الخبرات</span
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="features-section">
-      <div class="container">
-        <div class="features-header">
-          <h2 class="section-title" data-i18n="features_title">
-            ما يميز اعمالنا
-          </h2>
-        </div>
-
-        <div class="features-grid">
-          <!-- Row 1 -->
-          <div class="feature-item">
-            <div class="feature-content">
-              <h3 data-i18n="feature_1_title">سرعة الاستجابة</h3>
-              <p data-i18n="feature_1_desc">
-                نحرص على الاستجابة السريعة لطلباتكم، ملتزمين بالجدول الزمني
-                الخاص بكم دون الحاجة لانتظار طويل.
-              </p>
-            </div>
-            <div class="feature-icon-box">
-              <i class="fas fa-rocket"></i>
-            </div>
-          </div>
-
-          <div class="feature-item">
-            <div class="feature-content">
-              <h3 data-i18n="feature_2_title">العمل المستمر</h3>
-              <p data-i18n="feature_2_desc">
-                نقدم خدماتنا على مدار الساعة وطوال أيام الأسبوع لضمان تلبية
-                احتياجاتكم في أي وقت تحتاجون فيه.
-              </p>
-            </div>
-            <div class="feature-icon-box">
-              <i class="fas fa-moon"></i>
-            </div>
-          </div>
-
-          <div class="feature-item">
-            <div class="feature-content">
-              <h3 data-i18n="feature_3_title">شرح الخيارات بوضوح</h3>
-              <p data-i18n="feature_3_desc">
-                نقدم لكم شرحاً وافياً لجميع الخيارات المتاحة، ونساعدكم في اختيار
-                الخيار الأفضل لموقعكم بوضوح ودقة.
-              </p>
-            </div>
-            <div class="feature-icon-box">
-              <i class="fas fa-list-check"></i>
-            </div>
-          </div>
-
-          <!-- Row 2 -->
-          <div class="feature-item">
-            <div class="feature-content">
-              <h3 data-i18n="feature_4_title">ضمان التعاقد والمتابعة</h3>
-              <p data-i18n="feature_4_desc">
-                نضمن التعاقد ونقوم بالمتابعة لضمان راحتكم وثقتكم في خدماتنا.
-              </p>
-            </div>
-            <div class="feature-icon-box">
-              <i class="fas fa-file-contract"></i>
-            </div>
-          </div>
-
-          <div class="feature-item">
-            <div class="feature-content">
-              <h3 data-i18n="feature_5_title">
-                المواد المستخدمة ذات المعايير الدولية
-              </h3>
-              <p data-i18n="feature_5_desc">
-                نستخدم فقط المواد المطابقة للمعايير الدولية للسلامة لضمان جودة
-                العمل وسلامة المواقع.
-              </p>
-            </div>
-            <div class="feature-icon-box">
-              <i class="fas fa-certificate"></i>
-            </div>
-          </div>
-
-          <div class="feature-item">
-            <div class="feature-content">
-              <h3 data-i18n="feature_6_title">تقديم التوصيات الهامة</h3>
-              <p data-i18n="feature_6_desc">
-                نقدم توصيات هامة قبل وخلال تنفيذ المشاريع بهدف ضمان رضاكم التام
-                عن النتائج النهائية.
-              </p>
-            </div>
-            <div class="feature-icon-box">
-              <i class="fas fa-lightbulb"></i>
-            </div>
-          </div>
-
-          <!-- Row 3 -->
-          <div class="feature-item">
-            <div class="feature-content">
-              <h3 data-i18n="feature_7_title">العمالة المؤهلة</h3>
-              <p data-i18n="feature_7_desc">
-                يتمتع فريقنا بكفاءة عالية ويتعامل مع مشكلاتكم على الفور وبطريقة
-                سريعة وفعالة لضمان تقديم الحلول المناسبة لكل تحدي.
-              </p>
-            </div>
-            <div class="feature-icon-box">
-              <i class="fas fa-user-gear"></i>
-            </div>
-          </div>
-
-          <div class="feature-item">
-            <div class="feature-content">
-              <h3 data-i18n="feature_8_title">أنظمة متابعة العملاء</h3>
-              <p data-i18n="feature_8_desc">
-                نتميز بأنظمة متقدمة لمتابعة العملاء تضمن التواصل الفعال وتلبية
-                جميع احتياجاتكم بدقة وفعالية.
-              </p>
-            </div>
-            <div class="feature-icon-box">
-              <i class="fas fa-desktop"></i>
-            </div>
-          </div>
-
-          <div class="feature-item">
-            <div class="feature-content">
-              <h3 data-i18n="feature_9_title">الاهتمام بقياس رضا العملاء</h3>
-              <p data-i18n="feature_9_desc">
-                نولي اهتماماً دائماً بقياس مدى رضا العملاء عن الخدمة المقدمة،
-                ونسعى جاهدين لتحسين الجودة وتقديم أفضل الخدمات.
-              </p>
-            </div>
-            <div class="feature-icon-box">
-              <i class="fas fa-gauge-high"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="detailed-values-section">
-      <div class="container">
-        <div class="values-header">
-          <h2 class="section-title" data-i18n="values_section_title">قيمنا</h2>
-          <p class="subtitle" data-i18n="values_section_subtitle">
-            تؤمن في شركة ترابط بمجموعة من القيم الأساسية التي تشكل اساس عملنا
-            وتوجهنا في جميع تعاملاتنا مع عملائنا. هذه القيم هي:
-          </p>
-        </div>
-
-        <div class="values-items-container">
-          <div class="value-detailed-item">
-            <div class="value-detailed-icon">
-              <i class="fas fa-star"></i>
-            </div>
-            <div class="value-detailed-content">
-              <h3 data-i18n="detailed_value_1_title">
-                أهمية النمو المستدام والمسؤول
-              </h3>
-              <p data-i18n="detailed_value_1_desc">
-                حيث نقيس نجاحنا ليس فقط من خلال الأرباح التجارية، بل أيضا من
-                خلال تأثيرنا الإيجابي على البيئة والمجتمع. نحن نعمل بجدية لتحقيق
-                النمو الذي يعود بالنفع على جميع الفاعلين وأصحاب المصلحة، مع
-                الحفاظ على توازن مستدام بين الجوانب الاقتصادية والبيئية
-                والاجتماعية.
-              </p>
-            </div>
-          </div>
-
-          <div class="value-detailed-item">
-            <div class="value-detailed-icon">
-              <i class="fas fa-star"></i>
-            </div>
-            <div class="value-detailed-content">
-              <h3 data-i18n="detailed_value_2_title">أهمية العمل الجماعي</h3>
-              <p data-i18n="detailed_value_2_desc">
-                كمحرك للتطور والنجاح. نحن نعمل على كسر حواجز العزلة، وتعزيز
-                ثقافة التعاون بين مختلف الأقسام والفرق، حيث يتم تمكين كل فرد من
-                المساهمة بفاعلية في تحقيق أهدافنا المشتركة ونجاحنا الجماعي.
-              </p>
-            </div>
-          </div>
-
-          <div class="value-detailed-item">
-            <div class="value-detailed-icon">
-              <i class="fas fa-star"></i>
-            </div>
-            <div class="value-detailed-content">
-              <h3 data-i18n="detailed_value_3_title">التركيز على العملاء</h3>
-              <p data-i18n="detailed_value_3_desc">
-                هو أساس نجاحنا. نحن نسعى جاهدين لبناء علاقات ثقة قوية مع
-                عملائنا، حيث نستمع بعمق إلى احتياجاتهم ونلتزم بتحقيقها بكل دقة
-                ومهنية. نحن لا نكتفي بتحقيق الوعود، بل نسعى دائما لتجاوز
-                توقعاتهم وتقديم خدمات تفوق ما يتوقعونه.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="site-footer">
-      <div class="footer-bottom">
-        <div class="container footer-bottom-content">
-          <div class="footer-logo">
-            <img src="assets/images/logo-tarabut.png" alt="Tarabut Logo" />
-            <div class="logo-text">
-              <span>ترابط</span>
-              <span>Tarabut</span>
-            </div>
-          </div>
-
-          <nav class="footer-nav">
-            <ul>
-              <li><a href="#" data-i18n="nav_home">الرئيسية</a></li>
-              <li><a href="about-us.html" data-i18n="nav_about">من نحن</a></li>
-              <li><a href="clients.html" data-i18n="nav_clients">عملاؤنا</a></li>
-              <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer-copyright">
-          <p data-i18n="footer_copy">
-            Copyright 2025 Tarabut. All Rights Reserved
-          </p>
-        </div>
-      </div>
-
-      <button id="backToTop" class="back-to-top">
-        <i class="fas fa-chevron-up"></i>
-      </button>
-    </footer>
-
-    <script src="js/translation.js"></script>
-    <script src="js/main.js"></script>
-  </body>
 </html>

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/components/hero.css" />
     <link rel="stylesheet" href="css/components/about-section.css" />
     <link rel="stylesheet" href="css/components/footer.css" />
+    <link rel="stylesheet" href="css/components/lang-switcher.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <title data-i18n="page_title_news">ترابط - الأخبار</title>
@@ -33,96 +34,97 @@
     </style>
 </head>
 
-<body>
+<div class="lang-switcher">
+    <button class="lang-btn-item" data-lang="en">English</button>
+    <button class="lang-btn-item" data-lang="ar">Arabic</button>
+</div>
 
-    <button id="lang-toggle" class="lang-btn" data-i18n="lang_btn">🇺🇸 English</button>
+<header class="site-header">
+    <div class="header-inner">
+        <div class="logo-area">
+            <div class="logo-shape">
+                <img src="assets/images/logo-tarabut.png" alt="Tarabut Logo" />
+            </div>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
 
-    <header class="site-header">
-        <div class="header-inner">
-            <div class="logo-area">
-                <div class="logo-shape">
-                    <img src="assets/images/logo-tarabut.png" alt="Tarabut Logo" />
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+                <li><a href="about-us.html" data-i18n="nav_about">من نحن</a></li>
+                <li><a href="services.html" data-i18n="nav_services">الخدمات</a></li>
+                <li><a href="news.html" class="active" data-i18n="nav_news">الاخبار</a></li>
+                <li><a href="clients.html" data-i18n="nav_clients">عملائنا</a></li>
+
+                <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
+            </ul>
+        </nav>
+
+        <div class="top-bar">
+            <div class="contact-info">
+                <span data-i18n="contact_number">07834434800</span>
+                <div class="phone-icon-circle">
+                    <i class="fas fa-phone-alt"></i>
                 </div>
-                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
-                    <i class="fas fa-bars"></i>
-                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="hero page-hero news-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+        <div class="page-title-box">
+            <h1 class="page-title" data-i18n="nav_news">الاخبار</h1>
+            <div class="breadcrumbs">
+                <a href="index.html" data-i18n="nav_home">الرئيسية</a>
+                <i class="fas fa-arrow-left"></i>
+                <span data-i18n="nav_news">الاخبار</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="coming-soon-wrapper">
+    <div class="container">
+        <h2 class="coming-soon-text" data-i18n="coming_soon">قريباً...</h2>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-bottom">
+        <div class="container footer-bottom-content">
+            <div class="footer-logo">
+                <img src="assets/images/logo-tarabut.png" alt="Tarabut Logo">
+                <div class="logo-text">
+                    <span>ترابط</span>
+                    <span>Tarabut</span>
+                </div>
             </div>
 
-            <nav class="main-nav" id="main-nav">
+            <nav class="footer-nav">
                 <ul>
                     <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
                     <li><a href="about-us.html" data-i18n="nav_about">من نحن</a></li>
-                    <li><a href="services.html" data-i18n="nav_services">الخدمات</a></li>
-                    <li><a href="news.html" class="active" data-i18n="nav_news">الاخبار</a></li>
                     <li><a href="clients.html" data-i18n="nav_clients">عملائنا</a></li>
-
-                    <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
+                    <li><a href="index.html#contact" data-i18n="nav_contact">تواصل معنا</a></li>
                 </ul>
             </nav>
-
-            <div class="top-bar">
-                <div class="contact-info">
-                    <span data-i18n="contact_number">07834434800</span>
-                    <div class="phone-icon-circle">
-                        <i class="fas fa-phone-alt"></i>
-                    </div>
-                </div>
-            </div>
         </div>
-    </header>
-
-    <section class="hero page-hero news-hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content container">
-            <div class="page-title-box">
-                <h1 class="page-title" data-i18n="nav_news">الاخبار</h1>
-                <div class="breadcrumbs">
-                    <a href="index.html" data-i18n="nav_home">الرئيسية</a>
-                    <i class="fas fa-arrow-left"></i>
-                    <span data-i18n="nav_news">الاخبار</span>
-                </div>
-            </div>
+        <div class="footer-copyright">
+            <p data-i18n="footer_copy">Copyright 2025 Tarabut. All Rights Reserved</p>
         </div>
-    </section>
+    </div>
 
-    <section class="coming-soon-wrapper">
-        <div class="container">
-            <h2 class="coming-soon-text" data-i18n="coming_soon">قريباً...</h2>
-        </div>
-    </section>
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+</footer>
 
-    <footer class="site-footer">
-        <div class="footer-bottom">
-            <div class="container footer-bottom-content">
-                <div class="footer-logo">
-                    <img src="assets/images/logo-tarabut.png" alt="Tarabut Logo">
-                    <div class="logo-text">
-                        <span>ترابط</span>
-                        <span>Tarabut</span>
-                    </div>
-                </div>
-
-                <nav class="footer-nav">
-                    <ul>
-                        <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
-                        <li><a href="about-us.html" data-i18n="nav_about">من نحن</a></li>
-                        <li><a href="clients.html" data-i18n="nav_clients">عملائنا</a></li>
-                        <li><a href="index.html#contact" data-i18n="nav_contact">تواصل معنا</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="footer-copyright">
-                <p data-i18n="footer_copy">Copyright 2025 Tarabut. All Rights Reserved</p>
-            </div>
-        </div>
-
-        <button id="backToTop" class="back-to-top">
-            <i class="fas fa-chevron-up"></i>
-        </button>
-    </footer>
-
-    <script src="js/translation.js"></script>
-    <script src="js/main.js"></script>
+<script src="js/translation.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>

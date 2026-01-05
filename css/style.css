@@ -6,6 +6,7 @@
   --light-blue-dark: #1d4ed8;
   --sky-blue: #4facfe;
   --stats-blue: #2b7dde;
+  --footer-blue: #222933;
 
   --white: #fff;
   --light-gray: #f1f5f9;
@@ -87,7 +88,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Cairo', sans-serif;
+  font-family: 'rubik', sans-serif;
 }
 
 html,
@@ -100,6 +101,15 @@ body {
 section {
   overflow: hidden;
 }
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'poppins', sans-serif;
+} */
 
 .container {
   max-width: var(--container-max);

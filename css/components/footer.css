@@ -1,4 +1,3 @@
-
 .site-footer {
   position: relative;
   margin-top: var(--spacing-4xl);
@@ -9,7 +8,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: var(--spacing-lg);
   position: relative;
-  top: -50px;
+  top: 0px;
   z-index: 10;
 }
 
@@ -80,7 +79,7 @@
 }
 
 .footer-bottom {
-  background-color: var(--dark-blue);
+  background-color: var(--footer-blue);
   padding: var(--spacing-4xl) 0 var(--spacing-lg);
   margin-top: -50px;
 }
